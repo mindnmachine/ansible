@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+   - name: get facts
+     debug:
+      msg: "{{ansible_all_ipv4_addresses.1}} is the host address of {{ansible_hostname}}"
+      msg: "{{ansible_facts}}"
